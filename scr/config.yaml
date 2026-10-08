@@ -1,0 +1,4 @@
+data : 
+ file1_path : '../data/tmdb_5000_credits.csv'
+ file2_path : '../data/tmdb_5000_movies.csv'
+ file3_path : '../data/dataset.csv.gz'

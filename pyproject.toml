@@ -1,0 +1,12 @@
+[project]
+name = "movie-recomendation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.65.0",
+]
