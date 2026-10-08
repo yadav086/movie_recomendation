@@ -3,7 +3,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def load_config(path = 'config.yaml'):
+def load_config(path='config.yaml'):
     try:
         with open(path, 'r') as read:
             return yaml.safe_load(read)
