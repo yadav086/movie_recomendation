@@ -134,36 +134,11 @@ def load_data() -> pd.DataFrame:
     # --------------------------------------------------------
     # Read CSV files
     # --------------------------------------------------------
-
-    movies = pd.read_csv(movies_path)
-
-    credits = pd.read_csv(credits_path)
-
-    # --------------------------------------------------------
-    # Validate title column
-    # --------------------------------------------------------
-
-    if "title" not in movies.columns:
-
-        raise ValueError(
-            "Movies dataset must contain a 'title' column."
-        )
-
-    if "title" not in credits.columns:
-
-        raise ValueError(
-            "Credits dataset must contain a 'title' column."
-        )
-
-    # --------------------------------------------------------
-    # Merge datasets
-    # --------------------------------------------------------
-
-    df = credits.merge(
-        movies,
-        on="title",
-        how="inner",
-    )
+        
+    file_path3 = config['data']['file3_path']
+    
+    df = pd.read_csv(file_path3)
+    
 
     # --------------------------------------------------------
     # Validate required columns
